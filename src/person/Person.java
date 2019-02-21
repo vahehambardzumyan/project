@@ -1,5 +1,12 @@
 package person;
 
+import cloths.man_cloths.hats.Hat;
+import cloths.man_cloths.shoes.Shoes;
+import cloths.man_cloths.topDress.TopDress;
+import cloths.women_cloths.downDress.DownDress;
+import pets.Cat;
+import pets.Dog;
+
 public class Person {
     String first_name;
     String last_name;
@@ -30,9 +37,12 @@ public class Person {
         this.cat = cat;
         this.dog = dog;
     }
-   public draw(){
+   public void draw(Shoes shoes){
+       System.out.println(shoes);
     }
     public goOut(){
 
     }
+
+
 }

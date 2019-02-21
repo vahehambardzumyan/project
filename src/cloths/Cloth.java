@@ -1,4 +1,4 @@
-package Cloths;
+package cloths;
 
 public class Cloth {
 }
