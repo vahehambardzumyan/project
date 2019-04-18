@@ -7,7 +7,7 @@ import cloths.man_cloths.topDress.TopDress;
 import pets.Cat;
 import pets.Dog;
 
-public class Men extends Person {
+public class Men{
     String first_name;
     String last_name;
     int age;
@@ -64,7 +64,6 @@ public class Men extends Person {
     }
 
     public Men(String first_name, String last_name, int age) {
-        super(first_name, last_name, age);
         this.first_name = first_name;
         this.last_name = last_name;
         this.age =age;
@@ -72,11 +71,12 @@ public class Men extends Person {
     public void goOut(){
 
 
-        if(downDress!=null){
+        if(downDress!=null&& topDress!=null){
             System.out.println(first_name);
             System.out.println(last_name);
             System.out.println(age);
             System.out.println(downDress);
+            System.out.println(topDress);
         }else System.out.println("Chem karox durs gal");
 
     }
