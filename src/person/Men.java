@@ -7,13 +7,17 @@ import cloths.man_cloths.topDress.TopDress;
 import pets.Cat;
 import pets.Dog;
 
-public class Men{
+public class Men {
     String first_name;
     String last_name;
     int age;
     Shoes shoes;
     DownDress downDress;
     TopDress topDress;
+    Hat hat;
+    Cat cat;
+    Dog dog;
+
 
     public String getFirst_name() {
         return first_name;
@@ -63,21 +67,51 @@ public class Men{
         this.topDress = topDress;
     }
 
+    public Hat getHat() {
+        return hat;
+    }
+
+    public void setHat(Hat hat) {
+        this.hat = hat;
+    }
+
+    public Cat getCat() {
+        return cat;
+    }
+
+    public void setCat(Cat cat) {
+        this.cat = cat;
+    }
+
+    public Dog getDog() {
+        return dog;
+    }
+
+    public void setDog(Dog dog) {
+        this.dog = dog;
+    }
+
     public Men(String first_name, String last_name, int age) {
         this.first_name = first_name;
         this.last_name = last_name;
-        this.age =age;
+        this.age = age;
     }
-    public void goOut(){
+
+    public void goOut() {
 
 
-        if(downDress!=null&& topDress!=null){
+        if (downDress != null && topDress != null && shoes != null && hat != null) {
             System.out.println(first_name);
             System.out.println(last_name);
             System.out.println(age);
             System.out.println(downDress);
             System.out.println(topDress);
-        }else System.out.println("Chem karox durs gal");
+            System.out.println(shoes);
+            System.out.println(hat);
+            System.out.println(dog);
+            System.out.println(cat);
+            System.out.println("Thanks for watching");
+        } else System.out.println("Chem karox durs gal");
 
     }
 }

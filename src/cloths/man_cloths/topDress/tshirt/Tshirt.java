@@ -24,6 +24,6 @@ public class Tshirt  extends TopDress {
 
     @Override
     public String toString() {
-        return "Top dress type is Tshirt brand Name is " + brendName +" "+"with color "+color;
+        return "Top dress type is Tshirt, brand Name is " + brendName +" "+",with color "+color;
     }
 }
